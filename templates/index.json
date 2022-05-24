@@ -11,7 +11,7 @@
             "image_height": "medium",
             "adapt_height_first_image": false,
             "desktop_content_position": "middle-left",
-            "show_text_box": true,
+            "show_text_box": false,
             "desktop_content_alignment": "center",
             "color_scheme": "background-1",
             "mobile_content_alignment": "center",
