@@ -80,7 +80,8 @@
         >
       </div>
     {%- endif -%}
-    <div class="banner__content banner__content--{{ block.settings.desktop_content_position }} page-width">
+    {% comment %} <div class="banner__content banner__content--{{ block.settings.desktop_content_position }} page-width"> {% endcomment %}
+    <div class="banner__content banner__content--{{ block.settings.desktop_content_position }}">
       <div class="banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient">
         <h2 class="banner__heading {{ block.settings.heading_size }}">
           <span>{{ block.settings.heading | escape }}</span>
