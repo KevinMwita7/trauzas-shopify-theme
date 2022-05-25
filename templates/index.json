@@ -28,36 +28,10 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
-        },
-        "f15f3d4d-f73d-49ee-810f-fc59cc987707": {
-          "type": "banner_slide",
-          "settings": {
-            "image_overlay_opacity": 0,
-            "image_height": "medium",
-            "adapt_height_first_image": false,
-            "desktop_content_position": "middle-center",
-            "show_text_box": true,
-            "desktop_content_alignment": "center",
-            "color_scheme": "background-1",
-            "mobile_content_alignment": "center",
-            "stack_images_on_mobile": true,
-            "show_text_below": true,
-            "heading": "Image banner",
-            "heading_size": "h1",
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body",
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
-        "e3eb7691-36bd-40e3-b9a8-95c4195ac55f",
-        "f15f3d4d-f73d-49ee-810f-fc59cc987707"
+        "e3eb7691-36bd-40e3-b9a8-95c4195ac55f"
       ],
       "settings": {
       }
