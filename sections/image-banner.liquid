@@ -31,14 +31,14 @@
 {%- endstyle -%}
 
 
-<div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ block.settings.desktop_content_alignment }} banner--content-align-mobile-{{ block.settings.mobile_content_alignment }} banner--{{ block.settings.image_height }}{% if block.settings.stack_images_on_mobile and block.settings.image != blank and block.settings.image_2 != blank %} banner--stacked{% endif %}{% if block.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt{% endif %}{% if block.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}" {{ block.shopify_attributes }}>
+<div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ block.settings.desktop_content_alignment }} banner--content-align-mobile-{{ block.settings.mobile_content_alignment }} banner--{{ block.settings.image_height }}{% if block.settings.stack_images_on_mobile and block.settings.image != blank and block.settings.image_2 != blank %} banner--stacked{% endif %}{% if block.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt{% endif %}{% if block.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
   <!-- Slider main container -->
   <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
       {%- for block in section.blocks -%}
-        <div class="swiper-slide">
+        <div class="swiper-slide" {{ block.shopify_attributes }}>
           {%- if block.settings.image != blank -%}
             <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}{% if block.settings.image_2 != blank %} banner__media-half{% endif %}">
               <img
