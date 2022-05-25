@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
           
       document.addEventListener("shopify:block:select", function(event) {
         var block = JSON.parse(event.target.dataset.shopifyEditorBlock);
-        console.log("Swiper block is", block)
         if(block.type === "banner_slide") {
+          console.log("Swiper block is", event.target.dataset.slideIndex)
           swiper.slideTo(+event.target.dataset.slideIndex);
         }
       });
