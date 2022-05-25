@@ -31,14 +31,11 @@
 {%- endstyle -%}
 
 
-{% comment %} <div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ block.settings.desktop_content_alignment }} banner--content-align-mobile-{{ block.settings.mobile_content_alignment }} banner--{{ block.settings.image_height }}{% if block.settings.stack_images_on_mobile and block.settings.image != blank and block.settings.image_2 != blank %} banner--stacked{% endif %}{% if block.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt{% endif %}{% if block.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}"> {% endcomment %}
-  <!-- Slider main container -->
+<div id="Banner-{{ section.id }}">
   <div class="swiper">
-    <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-      <!-- Slides -->
       {%- for block in section.blocks -%}
-        <div class="swiper-slide" {{ block.shopify_attributes }}>
+        <div class="swiper-slide" class="banner banner--content-align-{{ block.settings.desktop_content_alignment }} banner--content-align-mobile-{{ block.settings.mobile_content_alignment }} banner--{{ block.settings.image_height }}{% if block.settings.stack_images_on_mobile and block.settings.image != blank and block.settings.image_2 != blank %} banner--stacked{% endif %}{% if block.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt{% endif %}{% if block.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}" {{ block.shopify_attributes }}>
           {%- if block.settings.image != blank -%}
             <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}{% if block.settings.image_2 != blank %} banner__media-half{% endif %}">
               <img
@@ -110,14 +107,12 @@
         </div>
       {%- endfor -%}
     </div>
-    <!-- Pagination -->
     <div class="swiper-pagination"></div>
 
-    <!-- Navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
-{% comment %} </div> {% endcomment %}
+</div>
 
 <script src="{{ 'swiper.min.js' | asset_url }}" defer></script>
 <script src="{{ 'banner-slide.js' | asset_url }}" defer></script>
