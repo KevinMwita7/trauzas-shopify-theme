@@ -1,4 +1,5 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'swiper.min.css' | asset_url | stylesheet_tag }}
 
 {%- if block.settings.adapt_height_first_image and block.settings.image != blank -%}
   {%- style -%}
@@ -29,78 +30,93 @@
   }
 {%- endstyle -%}
 
-{%- for block in section.blocks -%}
-  <div id="Banner-{{ section.id }}" class="banner banner--content-align-{{ block.settings.desktop_content_alignment }} banner--content-align-mobile-{{ block.settings.mobile_content_alignment }} banner--{{ block.settings.image_height }}{% if block.settings.stack_images_on_mobile and block.settings.image != blank and block.settings.image_2 != blank %} banner--stacked{% endif %}{% if block.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt{% endif %}{% if block.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}" {{ block.shopify_attributes }}>
-    {%- if block.settings.image != blank -%}
-      <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}{% if block.settings.image_2 != blank %} banner__media-half{% endif %}">
-        <img
-          srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
-            {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
-            {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
-            {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
-            {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-            {%- if block.settings.image.width >= 1780 -%}{{ block.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
-            {%- if block.settings.image.width >= 2000 -%}{{ block.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
-            {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
-            {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
-            {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
-          sizes="{% if block.settings.image_2 != blank and block.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif block.settings.image_2 != blank %}50vw{% else %}100vw{% endif %}"
-          src="{{ block.settings.image | image_url: width: 1500 }}"
-          loading="lazy"
-          alt="{{ block.settings.image.alt | escape }}"
-          width="{{ block.settings.image.width }}"
-          height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio }}"
-          {% if block.settings.image_2 != blank %}class="banner__media-image-half"{% endif %}
-        >
-      </div>
-    {%- elsif block.settings.image_2 == blank -%}
-      <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}{% if block.settings.image_2 != blank %} banner__media-half{% endif %}">
-        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-      </div>
-    {%- endif -%}
-    {%- if block.settings.image_2 != blank -%}
-      <div class="banner__media media{% if block.settings.image != blank %} banner__media-half{% endif %}">
-        <img
-          srcset="{%- if block.settings.image_2.width >= 375 -%}{{ block.settings.image_2 | image_url: width: 375 }} 375w,{%- endif -%}
-            {%- if block.settings.image_2.width >= 750 -%}{{ block.settings.image_2 | image_url: width: 750 }} 750w,{%- endif -%}
-            {%- if block.settings.image_2.width >= 1100 -%}{{ block.settings.image_2 | image_url: width: 1100 }} 1100w,{%- endif -%}
-            {%- if block.settings.image_2.width >= 1500 -%}{{ block.settings.image_2 | image_url: width: 1500 }} 1500w,{%- endif -%}
-            {%- if block.settings.image_2.width >= 1780 -%}{{ block.settings.image_2 | image_url: width: 1780 }} 1780w,{%- endif -%}
-            {%- if block.settings.image_2.width >= 2000 -%}{{ block.settings.image_2 | image_url: width: 2000 }} 2000w,{%- endif -%}
-            {%- if block.settings.image_2.width >= 3000 -%}{{ block.settings.image_2 | image_url: width: 3000 }} 3000w,{%- endif -%}
-            {%- if block.settings.image_2.width >= 3840 -%}{{ block.settings.image_2 | image_url: width: 3840 }} 3840w,{%- endif -%}
-            {{ block.settings.image_2 | image_url }} {{ block.settings.image_2.width }}w"
-          sizes="{% if block.settings.image != blank and block.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif block.settings.image != blank %}50vw{% else %}100vw{% endif %}"
-          src="{{ block.settings.image_2 | image_url: width: 1500 }}"
-          loading="lazy"
-          alt="{{ block.settings.image_2.alt | escape }}"
-          width="{{ block.settings.image_2.width }}"
-          height="{{ block.settings.image_2.width | divided_by: block.settings.image_2.aspect_ratio }}"
-          {% if block.settings.image != blank %}class="banner__media-image-half"{% endif %}
-        >
-      </div>
-    {%- endif -%}
-    {% comment %} <div class="banner__content banner__content--{{ block.settings.desktop_content_position }} page-width"> {% endcomment %}
-    <div class="banner__content banner__content--{{ block.settings.desktop_content_position }}">
-      <div class="banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient">
-        <h2 class="banner__heading {{ block.settings.heading_size }}">
-          <span>{{ block.settings.heading | escape }}</span>
-        </h2>
-        <div class="banner__text {{ block.settings.text_style }}">
-          <span>{{ block.settings.text | escape }}</span>
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    {%- for block in section.blocks -%}
+      <div id="Banner-{{ section.id }}" class="swiper-slide banner banner--content-align-{{ block.settings.desktop_content_alignment }} banner--content-align-mobile-{{ block.settings.mobile_content_alignment }} banner--{{ block.settings.image_height }}{% if block.settings.stack_images_on_mobile and block.settings.image != blank and block.settings.image_2 != blank %} banner--stacked{% endif %}{% if block.settings.adapt_height_first_image and block.settings.image != blank %} banner--adapt{% endif %}{% if block.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}" {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}
+          <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}{% if block.settings.image_2 != blank %} banner__media-half{% endif %}">
+            <img
+              srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
+                {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
+                {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+                {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
+                {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {%- if block.settings.image.width >= 1780 -%}{{ block.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
+                {%- if block.settings.image.width >= 2000 -%}{{ block.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
+                {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
+                {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+              sizes="{% if block.settings.image_2 != blank and block.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif block.settings.image_2 != blank %}50vw{% else %}100vw{% endif %}"
+              src="{{ block.settings.image | image_url: width: 1500 }}"
+              loading="lazy"
+              alt="{{ block.settings.image.alt | escape }}"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio }}"
+              {% if block.settings.image_2 != blank %}class="banner__media-image-half"{% endif %}
+            >
+          </div>
+        {%- elsif block.settings.image_2 == blank -%}
+          <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}{% if block.settings.image_2 != blank %} banner__media-half{% endif %}">
+            {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+        {%- endif -%}
+        {%- if block.settings.image_2 != blank -%}
+          <div class="banner__media media{% if block.settings.image != blank %} banner__media-half{% endif %}">
+            <img
+              srcset="{%- if block.settings.image_2.width >= 375 -%}{{ block.settings.image_2 | image_url: width: 375 }} 375w,{%- endif -%}
+                {%- if block.settings.image_2.width >= 750 -%}{{ block.settings.image_2 | image_url: width: 750 }} 750w,{%- endif -%}
+                {%- if block.settings.image_2.width >= 1100 -%}{{ block.settings.image_2 | image_url: width: 1100 }} 1100w,{%- endif -%}
+                {%- if block.settings.image_2.width >= 1500 -%}{{ block.settings.image_2 | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {%- if block.settings.image_2.width >= 1780 -%}{{ block.settings.image_2 | image_url: width: 1780 }} 1780w,{%- endif -%}
+                {%- if block.settings.image_2.width >= 2000 -%}{{ block.settings.image_2 | image_url: width: 2000 }} 2000w,{%- endif -%}
+                {%- if block.settings.image_2.width >= 3000 -%}{{ block.settings.image_2 | image_url: width: 3000 }} 3000w,{%- endif -%}
+                {%- if block.settings.image_2.width >= 3840 -%}{{ block.settings.image_2 | image_url: width: 3840 }} 3840w,{%- endif -%}
+                {{ block.settings.image_2 | image_url }} {{ block.settings.image_2.width }}w"
+              sizes="{% if block.settings.image != blank and block.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif block.settings.image != blank %}50vw{% else %}100vw{% endif %}"
+              src="{{ block.settings.image_2 | image_url: width: 1500 }}"
+              loading="lazy"
+              alt="{{ block.settings.image_2.alt | escape }}"
+              width="{{ block.settings.image_2.width }}"
+              height="{{ block.settings.image_2.width | divided_by: block.settings.image_2.aspect_ratio }}"
+              {% if block.settings.image != blank %}class="banner__media-image-half"{% endif %}
+            >
+          </div>
+        {%- endif -%}
+        {% comment %} <div class="banner__content banner__content--{{ block.settings.desktop_content_position }} page-width"> {% endcomment %}
+        <div class="banner__content banner__content--{{ block.settings.desktop_content_position }}">
+          <div class="banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient">
+            <h2 class="banner__heading {{ block.settings.heading_size }}">
+              <span>{{ block.settings.heading | escape }}</span>
+            </h2>
+            <div class="banner__text {{ block.settings.text_style }}">
+              <span>{{ block.settings.text | escape }}</span>
+            </div>
+            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}">
+              {%- if block.settings.button_label_1 != blank -%}
+                <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
+              {%- endif -%}
+              {%- if block.settings.button_label_2 != blank -%}
+                <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
+              {%- endif -%}
+            </div>
+          </div>
         </div>
-        <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}">
-          {%- if block.settings.button_label_1 != blank -%}
-            <a{% if block.settings.button_link_1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_1 | escape }}</a>
-          {%- endif -%}
-          {%- if block.settings.button_label_2 != blank -%}
-            <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a>
-          {%- endif -%}
-        </div>
       </div>
-    </div>
+    {%- endfor -%}    
   </div>
-{%- endfor -%}
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<script src="{{ 'swiper.min.js' | asset_url }}" defer></script>
+<script src="{{ 'banner-slide.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
