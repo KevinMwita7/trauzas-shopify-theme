@@ -24,13 +24,15 @@
   {%- endstyle -%}
 {%- endif -%}
 
-{%- style -%}
-  {%- for block in section.blocks -%}
-    .swiper-slide-{{ forloop.index }}::after {
-      opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
-    }
-  {%- endfor -%}
-{%- endstyle -%}
+{% if section.blocks.size > 1 %}
+  {%- style -%}
+    {%- for block in section.blocks -%}
+      .swiper-slide-{{ forloop.index }}::after {
+        opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
+      }
+    {%- endfor -%}
+  {%- endstyle -%}
+{% endif %}
 
 
 <div id="Banner-{{ section.id }}">
@@ -117,8 +119,10 @@
   </div>
 </div>
 
-<script src="{{ 'swiper.min.js' | asset_url }}" defer></script>
-<script src="{{ 'banner-slide.js' | asset_url }}" defer></script>
+{% if section.blocks.size > 1 %}
+  <script src="{{ 'swiper.min.js' | asset_url }}" defer></script>
+  <script src="{{ 'banner-slide.js' | asset_url }}" defer></script>
+{% endif %}
 
 {% schema %}
 {
