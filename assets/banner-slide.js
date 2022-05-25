@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const swiper = new Swiper('.swiper', {
+    let swiper = new Swiper('.swiper', {
         // Optional parameters
         loop: true,
       
@@ -14,5 +14,23 @@ document.addEventListener('DOMContentLoaded', function() {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         }
+    });
+
+    if(Shopify.designMode) {
+      document.addEventListener("shopify:section:load", function (event) {
+        swiper = new Swiper('.swiper', options);
       });
+  
+      document.addEventListener("shopify:section:unload", function (event) {
+          swiper.destroy();
+      });
+          
+      document.addEventListener("shopify:block:select", function(event) {
+        var block = JSON.parse(event.target.dataset.shopifyEditorBlock);
+        console.log("Swiper block is", block)
+        if(block.type === "slide") {
+          swiper.slideTo(+event.target.dataset.slideIndex);
+        }
+      });
+    }
 });
