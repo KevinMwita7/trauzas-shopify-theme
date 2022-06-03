@@ -827,6 +827,10 @@
           "label": "Dostosuj wysokość sekcji do rozmiaru pierwszego obrazu",
           "info": "Nadpisuje ustawienie wysokości banera obrazu, jeżeli jest zaznaczone."
         },
+        "swiper_controls_color": {
+          "label": "Suwak steruje kolorem",
+          "info": "Strzałki nawigacji suwaka i kolor paginacji"
+        },
         "show_text_box": {
           "label": "Pokaż kontener na komputerze"
         },
@@ -915,6 +919,9 @@
               "label": "Nagłówek"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Zjeżdżalnia"
         },
         "text": {
           "name": "Tekst",

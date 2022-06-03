@@ -827,6 +827,10 @@
           "label": "Adaptar altura da secção ao tamanho da primeira imagem",
           "info": "Quando marcada, substitui a definição de altura do banner da imagem."
         },
+        "swiper_controls_color": {
+          "label": "Slider controla a cor",
+          "info": "Setas de navegação de slider e cor de paginação"
+        },
         "show_text_box": {
           "label": "Mostrar recetores no desktop"
         },
@@ -915,6 +919,9 @@
             }
           },
           "name": "Cabeçalho"
+        },
+        "banner_slide": {
+          "name": "Deslizar"
         },
         "text": {
           "settings": {

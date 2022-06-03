@@ -827,6 +827,10 @@
           "label": "Adapter la hauteur de la section à la taille de la première image",
           "info": "Remplace le paramètre de hauteur de la bannière d'image lorsqu'il est activé."
         },
+        "swiper_controls_color": {
+          "label": "Le curseur contrôle la couleur",
+          "info": "Flèches de navigation du curseur et couleur de pagination"
+        },
         "show_text_box": {
           "label": "Afficher le conteneur sur le bureau"
         },
@@ -915,6 +919,9 @@
               "label": "Titre"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Glisser"
         },
         "text": {
           "name": "Texte",

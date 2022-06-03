@@ -827,6 +827,10 @@
           "label": "Adaptar altura de sección a tamaño de primera imagen",
           "info": "Sobrescribe la configuración de altura del banner de imagen cuando está seleccionada."
         },
+        "swiper_controls_color": {
+          "label": "Controles deslizantes de color",
+          "info": "Flechas de navegación deslizante y color de paginación"
+        },
         "show_text_box": {
           "label": "Mostrar contenedor en la computadora"
         },
@@ -915,6 +919,9 @@
               "label": "Título"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Diapositiva"
         },
         "text": {
           "name": "Texto",

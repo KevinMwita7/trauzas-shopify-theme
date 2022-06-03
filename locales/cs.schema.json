@@ -905,6 +905,10 @@
             "label": "Doprava"
           },
           "label": "Zarovnání obsahu v mobilním prostředí"
+        },
+        "swiper_controls_color": {
+          "label": "Posuvník ovládá barvu",
+          "info": "Navigační šipky posuvníku a barva stránkování"
         }
       },
       "blocks": {
@@ -915,6 +919,9 @@
               "label": "Nadpis"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Klouzat"
         },
         "text": {
           "name": "Text",

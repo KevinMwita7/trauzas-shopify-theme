@@ -827,6 +827,10 @@
           "label": "Bölüm yüksekliğini ilk görselin boyutuna uyarla",
           "info": "İşaretlendiğinde görüntü banner'ı yükseklik ayarının üzerine yazar."
         },
+        "swiper_controls_color": {
+          "label": "Kaydırıcı renk kontrolü",
+          "info": "Kaydırıcı gezinme okları ve sayfalandırma rengi"
+        },
         "show_text_box": {
           "label": "Masaüstünde kapsayıcıyı göster"
         },
@@ -915,6 +919,9 @@
               "label": "Başlık"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Kaydırak"
         },
         "text": {
           "name": "Metin rengi",

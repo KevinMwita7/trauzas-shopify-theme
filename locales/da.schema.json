@@ -827,6 +827,10 @@
           "label": "Tilpas afsnitshøjden til størrelsen af det første billede",
           "info": "Overskriver indstillingerne for højden på billedbanneret, når det markeres."
         },
+        "swiper_controls_color": {
+          "label": "Skyderen styrer farven",
+          "info": "Skydernavigationspile og sideinddelingsfarve"
+        },
         "show_text_box": {
           "label": "Vis container på skrivebord"
         },
@@ -915,6 +919,9 @@
               "label": "Overskrift"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Klouzat"
         },
         "text": {
           "name": "Tekst",

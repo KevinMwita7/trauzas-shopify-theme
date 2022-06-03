@@ -827,6 +827,10 @@
           "label": "Adatta l'altezza della sezione alle dimensioni della prima immagine",
           "info": "Se si effettua la selezione, sovrascrive le impostazioni dell'altezza del banner immagine."
         },
+        "swiper_controls_color": {
+          "label": "Il dispositivo di scorrimento controlla il colore",
+          "info": "Frecce di navigazione del dispositivo di scorrimento e colore dell'impaginazione"
+        },
         "show_text_box": {
           "label": "Mostra contenitore sul desktop"
         },
@@ -915,6 +919,9 @@
               "label": "Titolo"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Diapositiva"
         },
         "text": {
           "name": "Testo",

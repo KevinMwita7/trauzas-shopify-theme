@@ -827,6 +827,10 @@
           "label": "Mukauta osion korkeus ensimmäisen kuvan kokoon",
           "info": "Korvaa kuvabannerin korkeusasetuksen"
         },
+        "swiper_controls_color": {
+          "label": "Liukusäätimen väri",
+          "info": "Liukusäätimen siirtymisnuolet ja sivutuksen väri"
+        },
         "show_text_box": {
           "label": "Näytä säilö pöytäkoneella"
         },
@@ -915,6 +919,9 @@
               "label": "Otsikko"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Liukumäki"
         },
         "text": {
           "name": "Teksti",

@@ -827,6 +827,10 @@
           "label": "Tilpass seksjonshøyden til den første bildestørrelsen",
           "info": "Overskriver innstillingen for bildebannerhøyde når den er avmerket."
         },
+        "swiper_controls_color": {
+          "label": "Farge på glidebryterkontroller",
+          "info": "Navigasjonspiler og pagineringsfarge for glidebryter"
+        },
         "show_text_box": {
           "label": "Vis beholder på datamaskin"
         },
@@ -915,6 +919,9 @@
               "label": "Overskrift"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Sklie"
         },
         "text": {
           "name": "Tekst",

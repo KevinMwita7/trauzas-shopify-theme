@@ -827,6 +827,10 @@
           "label": "Điều chỉnh độ cao mục theo cỡ hình ảnh thứ nhất",
           "info": "Nếu chọn, cài đặt chiều cao biểu ngữ hình ảnh sẽ được ghi đè."
         },
+        "swiper_controls_color": {
+          "label": "Màu điều khiển thanh trượt",
+          "info": "Mũi tên dẫn hướng thanh trượt và màu phân trang"
+        },
         "show_text_box": {
           "label": "Hiện vùng chứa trên máy tính để bàn"
         },
@@ -915,6 +919,9 @@
               "label": "Tiêu đề"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Trượt"
         },
         "text": {
           "name": "Văn bản",

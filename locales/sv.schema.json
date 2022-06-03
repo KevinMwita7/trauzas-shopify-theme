@@ -827,6 +827,10 @@
           "label": "Anpassa avsnittets höjd till storleken på första bilden.",
           "info": "Skriver över inställning för bildbanner-höjden när den markeras."
         },
+        "swiper_controls_color": {
+          "label": "Skjutreglaget styr färgen",
+          "info": "Skjutreglagets navigeringspilar och sidnumreringsfärg"
+        },
         "show_text_box": {
           "label": "Visa ruta på skrivbord"
         },
@@ -915,6 +919,9 @@
             }
           },
           "name": "Rubrik"
+        },
+        "banner_slide": {
+          "name": "Rutschbana"
         },
         "text": {
           "settings": {

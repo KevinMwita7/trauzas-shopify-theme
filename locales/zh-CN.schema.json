@@ -827,6 +827,10 @@
           "label": "使分区高度适应第一张图片大小",
           "info": "当勾选时，覆盖图像横幅高度设置。"
         },
+        "swiper_controls_color": {
+          "label": "滑块控制颜色",
+          "info": "滑块导航箭头和分页颜色"
+        },
         "show_text_box": {
           "label": "在台式机上显示容器"
         },
@@ -915,6 +919,9 @@
             }
           },
           "name": "标题"
+        },
+        "banner_slide": {
+          "name": "滑"
         },
         "text": {
           "settings": {

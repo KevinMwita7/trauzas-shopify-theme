@@ -827,6 +827,10 @@
           "label": "Adaptar a altura da seção para o tamanho da primeira imagem",
           "info": "Quando marcada, substitui a configuração de altura para o banner de imagem."
         },
+        "swiper_controls_color": {
+          "label": "Controle deslizante controla a cor",
+          "info": "Setas de navegação deslizantes e cor de paginação"
+        },
         "show_text_box": {
           "label": "Exibir contêiner no desktop"
         },
@@ -915,6 +919,9 @@
               "label": "Título"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Deslizar"
         },
         "text": {
           "name": "Texto",

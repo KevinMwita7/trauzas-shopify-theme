@@ -827,6 +827,10 @@
           "label": "Abschnittshöhe an Größe des ersten Bildes anpassen",
           "info": "Überschreibt bei Überprüfung die Einstellung für die Höhe des Bild-Banners."
         },
+        "swiper_controls_color": {
+          "label": "Schieberegler steuert die Farbe",
+          "info": "Navigationspfeile und Paginierungsfarbe des Schiebereglers"
+        },
         "show_text_box": {
           "label": "Container auf dem Desktop anzeigen"
         },
@@ -915,6 +919,9 @@
               "label": "Überschrift"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Gleiten"
         },
         "text": {
           "name": "Text",

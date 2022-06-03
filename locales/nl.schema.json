@@ -827,6 +827,10 @@
           "label": "Sectiehoogte aanpassen aan grootte eerste afbeelding",
           "info": "Overschrijft de instelling voor de hoogte van de bannerafbeelding als je deze controleert."
         },
+        "swiper_controls_color": {
+          "label": "Slider regelt kleur",
+          "info": "Schuifregelaar navigatiepijlen en pagineringskleur"
+        },
         "show_text_box": {
           "label": "Container op desktop weergeven"
         },
@@ -915,6 +919,9 @@
               "label": "Opschrift"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Glijden"
         },
         "text": {
           "name": "Tekstkleur",

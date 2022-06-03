@@ -827,6 +827,10 @@
           "label": "配合的一張圖片尺寸的區段高度",
           "info": "檢查時覆寫圖片橫幅高度設定。"
         },
+        "swiper_controls_color": {
+          "label": "滑塊控制顏色",
+          "info": "滑塊導航箭頭和分頁顏色"
+        },
         "show_text_box": {
           "label": "在桌面顯示容器"
         },
@@ -915,6 +919,9 @@
             }
           },
           "name": "標題"
+        },
+        "banner_slide": {
+          "name": "滑"
         },
         "text": {
           "settings": {
