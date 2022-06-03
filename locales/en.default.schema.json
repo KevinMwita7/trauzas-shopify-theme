@@ -1027,6 +1027,10 @@
         "adapt_height_first_image": {
           "label": "Adapt section height to first image size",
           "info": "Overwrites image banner height setting when checked."
+        },
+        "swiper_controls_color": {
+          "label": "Slider controls color",
+          "info": "Slider navigation arrows and pagination color"
         }
       },
       "blocks": {
@@ -1037,6 +1041,9 @@
               "label": "Heading"
             }
           }
+        },
+        "banner_slide": {
+          "name": "Slide"
         },
         "text": {
           "name": "Text",
