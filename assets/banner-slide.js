@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let swiper = new Swiper('.swiper', {
+      autoplay: true,
         // Optional parameters
         loop: true,
       
