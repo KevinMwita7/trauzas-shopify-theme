@@ -31,6 +31,7 @@
         "e8516e92-e7ce-457f-a551-4c912705fc11": {
           "type": "banner_slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/png.webp",
             "image_overlay_opacity": 0,
             "adapt_height_first_image": false,
             "desktop_content_position": "middle-center",
@@ -59,7 +60,7 @@
       ],
       "settings": {
         "image_height": "large",
-        "swiper_nav_color": "#fff"
+        "swiper_controls_color": "#FFF"
       }
     },
     "rich_text": {
