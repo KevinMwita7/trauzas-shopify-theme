@@ -34,7 +34,7 @@
             "image": "shopify:\/\/shop_images\/png.webp",
             "image_overlay_opacity": 0,
             "adapt_height_first_image": false,
-            "desktop_content_position": "middle-center",
+            "desktop_content_position": "middle-left",
             "show_text_box": true,
             "desktop_content_alignment": "center",
             "color_scheme": "background-1",
