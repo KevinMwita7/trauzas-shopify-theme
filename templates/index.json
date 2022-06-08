@@ -21,7 +21,7 @@
             "text": "PREMIER LEAGUE CHAMPIONS 2021\/2022",
             "text_style": "body",
             "button_label_1": "SHOP NOW",
-            "button_link_1": "",
+            "button_link_1": "shopify:\/\/collections",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -31,23 +31,24 @@
         "e8516e92-e7ce-457f-a551-4c912705fc11": {
           "type": "banner_slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/png.webp",
             "image_overlay_opacity": 0,
             "adapt_height_first_image": false,
-            "desktop_content_position": "middle-center",
-            "show_text_box": true,
+            "desktop_content_position": "middle-left",
+            "show_text_box": false,
             "desktop_content_alignment": "center",
-            "color_scheme": "background-1",
+            "color_scheme": "accent-1",
             "mobile_content_alignment": "center",
             "stack_images_on_mobile": true,
             "show_text_below": true,
-            "heading": "Image banner",
+            "heading": "PLAY FOREVER",
             "heading_size": "h1",
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "2022\/23 MANCHESTER CITY HOME KIT",
             "text_style": "body",
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify:\/\/collections",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -59,7 +60,7 @@
       ],
       "settings": {
         "image_height": "large",
-        "swiper_nav_color": "#fff"
+        "swiper_controls_color": "#FFF"
       }
     },
     "rich_text": {
