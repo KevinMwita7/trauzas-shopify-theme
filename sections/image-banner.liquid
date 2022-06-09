@@ -46,9 +46,9 @@
           {%- if block.settings.image != blank -%}
             <div class="banner__media media{% if block.settings.image == blank and block.settings.image_2 == blank %} placeholder{% endif %}{% if block.settings.image_2 != blank %} banner__media-half{% endif %}">
               <img
-                srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
-                  {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
-                  {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+                srcset="{%- if block.settings.image.width >= 375 -%}{%- if block.settings.image_mobile -%}{{ block.settings.image_mobile | image_url: width: 375 }}{%- else -%}{{ block.settings.image | image_url: width: 375 }}{%- endif -%} 375w,{%- endif -%}
+                  {%- if block.settings.image.width >= 550 -%}{%- if block.settings.image_mobile -%}{{ block.settings.image_mobile | image_url: width: 550 }}{%- else -%}{{ block.settings.image | image_url: width: 550 }}{%- endif -%} 550w,{%- endif -%}
+                  {%- if block.settings.image.width >= 750 -%}{%- if block.settings.image_mobile -%}{{ block.settings.image_mobile | image_url: width: 750 }}{%- else -%}{{ block.settings.image | image_url: width: 750 }}{%- endif -%} 750w,{%- endif -%}
                   {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
                   {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
                   {%- if block.settings.image.width >= 1780 -%}{{ block.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
@@ -73,8 +73,8 @@
           {%- if block.settings.image_2 != blank -%}
             <div class="banner__media media{% if block.settings.image != blank %} banner__media-half{% endif %}">
               <img
-                srcset="{%- if block.settings.image_2.width >= 375 -%}{{ block.settings.image_2 | image_url: width: 375 }} 375w,{%- endif -%}
-                  {%- if block.settings.image_2.width >= 750 -%}{{ block.settings.image_2 | image_url: width: 750 }} 750w,{%- endif -%}
+                srcset="{%- if block.settings.image_2.width >= 375 -%}{%- if block.settings.image_2_mobile -%}{{ block.settings.image_2_mobile | image_url: width: 375 }}{%- else -%}{{ block.settings.image_2 | image_url: width: 375 }}{%- endif -%} 375w,{%- endif -%}
+                  {%- if block.settings.image_2.width >= 750 -%}{%- if block.settings.image_2_mobile -%}{{ block.settings.image_2_mobile | image_url: width: 750 }}{%- else -%}{{ block.settings.image_2 | image_url: width: 750 }}{%- endif -%} 750w,{%- endif -%}
                   {%- if block.settings.image_2.width >= 1100 -%}{{ block.settings.image_2 | image_url: width: 1100 }} 1100w,{%- endif -%}
                   {%- if block.settings.image_2.width >= 1500 -%}{{ block.settings.image_2 | image_url: width: 1500 }} 1500w,{%- endif -%}
                   {%- if block.settings.image_2.width >= 1780 -%}{{ block.settings.image_2 | image_url: width: 1780 }} 1780w,{%- endif -%}
@@ -178,6 +178,18 @@
           "type": "image_picker",
           "id": "image_2",
           "label": "t:sections.image-banner.settings.image_2.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "First image for mobile",
+          "info": "First image to use for smaller devices"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2_mobile",
+          "label": "First image for mobile",
+          "info": "Second image to use for smaller devices"
         },
         {
           "type": "range",
