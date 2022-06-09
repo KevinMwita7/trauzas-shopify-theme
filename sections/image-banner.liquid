@@ -73,8 +73,8 @@
           {%- if block.settings.image_2 != blank -%}
             <div class="banner__media media{% if block.settings.image != blank %} banner__media-half{% endif %}">
               <img
-                srcset="{%- if block.settings.image_2.width >= 375 -%}{%- if block.settings.image_2_mobile -%}{{ block.settings.image_2_mobile | image_url: width: 375 }}{%- else -%}{{ block.settings.image_2 | image_url: width: 375 }}{%- endif -%} 375w,{%- endif -%}
-                  {%- if block.settings.image_2.width >= 750 -%}{%- if block.settings.image_2_mobile -%}{{ block.settings.image_2_mobile | image_url: width: 750 }}{%- else -%}{{ block.settings.image_2 | image_url: width: 750 }}{%- endif -%} 750w,{%- endif -%}
+                srcset="{{ block.settings.image_2 | image_url: width: 375 }} 375w,
+                  {{ block.settings.image_2 | image_url: width: 750 }} 750w,
                   {{ block.settings.image_2 | image_url: width: 1100 }} 1100w,
                   {{ block.settings.image_2 | image_url: width: 1500 }} 1500w,
                   {{ block.settings.image_2 | image_url: width: 1780 }} 1780w,
