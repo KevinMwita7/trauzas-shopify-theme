@@ -75,12 +75,12 @@
               <img
                 srcset="{%- if block.settings.image_2.width >= 375 -%}{%- if block.settings.image_2_mobile -%}{{ block.settings.image_2_mobile | image_url: width: 375 }}{%- else -%}{{ block.settings.image_2 | image_url: width: 375 }}{%- endif -%} 375w,{%- endif -%}
                   {%- if block.settings.image_2.width >= 750 -%}{%- if block.settings.image_2_mobile -%}{{ block.settings.image_2_mobile | image_url: width: 750 }}{%- else -%}{{ block.settings.image_2 | image_url: width: 750 }}{%- endif -%} 750w,{%- endif -%}
-                  {%- if block.settings.image_2.width >= 1100 -%}{{ block.settings.image_2 | image_url: width: 1100 }} 1100w,{%- endif -%}
-                  {%- if block.settings.image_2.width >= 1500 -%}{{ block.settings.image_2 | image_url: width: 1500 }} 1500w,{%- endif -%}
-                  {%- if block.settings.image_2.width >= 1780 -%}{{ block.settings.image_2 | image_url: width: 1780 }} 1780w,{%- endif -%}
-                  {%- if block.settings.image_2.width >= 2000 -%}{{ block.settings.image_2 | image_url: width: 2000 }} 2000w,{%- endif -%}
-                  {%- if block.settings.image_2.width >= 3000 -%}{{ block.settings.image_2 | image_url: width: 3000 }} 3000w,{%- endif -%}
-                  {%- if block.settings.image_2.width >= 3840 -%}{{ block.settings.image_2 | image_url: width: 3840 }} 3840w,{%- endif -%}
+                  {{ block.settings.image_2 | image_url: width: 1100 }} 1100w,
+                  {{ block.settings.image_2 | image_url: width: 1500 }} 1500w,
+                  {{ block.settings.image_2 | image_url: width: 1780 }} 1780w,
+                  {{ block.settings.image_2 | image_url: width: 2000 }} 2000w,
+                  {{ block.settings.image_2 | image_url: width: 3000 }} 3000w,
+                  {{ block.settings.image_2 | image_url: width: 3840 }} 3840w,
                   {{ block.settings.image_2 | image_url }} {{ block.settings.image_2.width }}w"
                 sizes="{% if block.settings.image != blank and block.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif block.settings.image != blank %}50vw{% else %}100vw{% endif %}"
                 src="{{ block.settings.image_2 | image_url: width: 1500 }}"
