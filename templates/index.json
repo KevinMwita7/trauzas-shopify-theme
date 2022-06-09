@@ -7,7 +7,6 @@
           "type": "banner_slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/banner_1.jpg",
-            "image_2": "shopify:\/\/shop_images\/png.webp",
             "image_overlay_opacity": 0,
             "adapt_height_first_image": false,
             "desktop_content_position": "middle-left",
