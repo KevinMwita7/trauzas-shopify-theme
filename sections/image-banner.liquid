@@ -83,11 +83,11 @@
                   {{ block.settings.image_2 | image_url: width: 3840 }} 3840w,
                   {{ block.settings.image_2 | image_url }} {{ block.settings.image_2.width }}w"
                 sizes="{% if block.settings.image != blank and block.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif block.settings.image != blank %}50vw{% else %}100vw{% endif %}"
-                src="{{ block.settings.image_2 | image_url: width: 1500 }}"
+                src="{{ block.settings.image_2_mobile | image_url: width: 1500 }}"
                 loading="lazy"
                 alt="{{ block.settings.image_2.alt | escape }}"
-                width="{{ block.settings.image_2.width }}"
-                height="{{ block.settings.image_2.width | divided_by: block.settings.image_2.aspect_ratio }}"
+                width="{{ block.settings.image_2_mobile.width }}"
+                height="{{ block.settings.image_2_mobile.width | divided_by: block.settings.image_2_mobile.aspect_ratio }}"
                 {% if block.settings.image != blank %}class="banner__media-image-half"{% endif %}
               >
             </div>
