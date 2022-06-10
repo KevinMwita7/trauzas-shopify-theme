@@ -86,7 +86,7 @@
                 src="{{ block.settings.image_2_mobile | image_url: width: 900 }}"
                 loading="lazy"
                 alt="{{ block.settings.image_2.alt | escape }}"
-                width="{{ block.settings.image_2_mobile.width }}"
+                width="900"
                 height="{{ block.settings.image_2_mobile.width | divided_by: block.settings.image_2_mobile.aspect_ratio }}"
                 {% if block.settings.image != blank %}class="banner__media-image-half"{% endif %}
               >
