@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let swiper = new Swiper('.swiper', {
+    let swiper = new Swiper('.image-banner-swiper', {
       autoplay: true,
         // Optional parameters
         loop: true,
