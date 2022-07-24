@@ -228,12 +228,6 @@
     "1658683394c5e0614c": {
       "type": "collection-list",
       "blocks": {
-        "165868339401732e51-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "kids"
-          }
-        },
         "165868339401732e51-1": {
           "type": "featured_collection",
           "settings": {
@@ -243,14 +237,20 @@
         "165868339401732e51-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "women"
+          }
+        },
+        "165868339401732e51-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kids"
           }
         }
       },
       "block_order": [
-        "165868339401732e51-0",
         "165868339401732e51-1",
-        "165868339401732e51-2"
+        "165868339401732e51-2",
+        "165868339401732e51-0"
       ],
       "settings": {
         "title": "Collections",
