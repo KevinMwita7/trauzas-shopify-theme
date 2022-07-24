@@ -245,12 +245,19 @@
           "settings": {
             "collection": "kids"
           }
+        },
+        "6c25173e-c9ed-4921-95d4-d283230fbfe5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
         "165868339401732e51-1",
         "165868339401732e51-2",
-        "165868339401732e51-0"
+        "165868339401732e51-0",
+        "6c25173e-c9ed-4921-95d4-d283230fbfe5"
       ],
       "settings": {
         "title": "Collections",
