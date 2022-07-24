@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let swiper = new Swiper('.collection-list-swiper', {
         slidesPerView: 3,
         spaceBetween: 30,
+        freeMode: true,
       
         // If we need pagination
         pagination: {
