@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let swiper = new Swiper('.collection-list-swiper', {
         slidesPerView: 3,
         spaceBetween: 30,
-        centeredSlides: true,      
         // If we need pagination
         pagination: {
           el: '.collection-list-swiper-pagination',
