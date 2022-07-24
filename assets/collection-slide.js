@@ -7,12 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
           el: '.collection-list-swiper-pagination',
           clickable: true,
         },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.collection-list-swiper-button-next',
-          prevEl: '.collection-list-swiper-button-prev',
-        }
     });
 
     if(Shopify.designMode) {
