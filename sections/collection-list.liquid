@@ -40,7 +40,7 @@
     {%- endunless -%}
   
     <div class="slider-mobile-gutter collection-list-swiper">
-      <ul class="swiper-wrapper collection-list contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}"
+      <div class="swiper-wrapper collection-list contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %}"
         role="list"
       >
         {%- liquid
@@ -50,11 +50,11 @@
           endif
         -%}
         {%- for block in section.blocks -%}
-          <li class="swiper-slide collection-list__item grid__item{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}" {{ block.shopify_attributes }}>
+          <div class="swiper-slide collection-list__item grid__item{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}" {{ block.shopify_attributes }}>
             {% render 'card-collection', card_collection: block.settings.collection , media_aspect_ratio: section.settings.image_ratio, columns: columns %}
-          </li>
+          </div>
         {%- endfor -%}
-      </ul>
+      </div>
       
       <div class="collection-list-swiper-pagination"></div>
 
