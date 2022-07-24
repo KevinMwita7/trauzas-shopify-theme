@@ -1,5 +1,6 @@
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'swiper.min.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
@@ -38,7 +39,7 @@
       </div>
     {%- endunless -%}
   
-    <div class="slider-mobile-gutter collection-list-swiper" data-swiper='{"initialSlide": 5, "slidesPerView": 3, "centeredSlides": true, "autoplay": {"delay": 2000}, "speed": 1000, "spaceBetween": 30, "pagination": {"el": ".swiper-pagination", "clickable": true} }'>
+    <div class="slider-mobile-gutter collection-list-swiper swiper-init" data-swiper='{"initialSlide": 5, "slidesPerView": 3, "centeredSlides": true, "autoplay": {"delay": 2000}, "speed": 1000, "spaceBetween": 30, "pagination": {"el": ".swiper-pagination", "clickable": true} }'>
       <ul class="swiper-wrapper collection-list contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if section.settings.swipe_on_mobile %} slider slider--tablet grid--peek{% endif %} collection-list--{{ section.blocks.size }}-items"
         id="Slider-{{ section.id }}"
         role="list"
@@ -76,6 +77,9 @@
     {%- endif -%}
   </div>
 </div>
+
+<script src="{{ 'swiper.min.js' | asset_url }}" defer></script>
+<script src="{{ 'collection-slide.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
