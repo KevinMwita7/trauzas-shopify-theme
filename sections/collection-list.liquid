@@ -38,7 +38,7 @@
       </div>
     {%- endunless -%}
   
-    <slider-component class="slider-mobile-gutter collection-list-swiper" data-swiper='{"initialSlide": 5, "slidesPerView": 3, "centeredSlides": true, "autoplay": {"delay": 2000}, "speed": 1000, "spaceBetween": 30, "pagination": {"el": ".swiper-pagination", "clickable": true} }'>
+    <div class="slider-mobile-gutter collection-list-swiper" data-swiper='{"initialSlide": 5, "slidesPerView": 3, "centeredSlides": true, "autoplay": {"delay": 2000}, "speed": 1000, "spaceBetween": 30, "pagination": {"el": ".swiper-pagination", "clickable": true} }'>
       <ul class="swiper-wrapper collection-list contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if section.settings.swipe_on_mobile %} slider slider--tablet grid--peek{% endif %} collection-list--{{ section.blocks.size }}-items"
         id="Slider-{{ section.id }}"
         role="list"
@@ -67,7 +67,7 @@
           <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
         </div>
       {%- endif -%}
-    </slider-component>
+    </div>
   
     {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
       <div class="center collection-list-view-all{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
