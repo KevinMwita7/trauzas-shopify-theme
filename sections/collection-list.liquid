@@ -39,7 +39,7 @@
       </div>
     {%- endunless -%}
   
-    <div class="slider-mobile-gutter collection-list-swiper swiper-init" data-swiper='{"initialSlide": 5, "slidesPerView": 3, "centeredSlides": true, "autoplay": {"delay": 2000}, "speed": 1000, "spaceBetween": 30, "pagination": {"el": ".swiper-pagination", "clickable": true} }'>
+    <div class="slider-mobile-gutter collection-list-swiper">
       <ul class="swiper-wrapper collection-list contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if section.settings.swipe_on_mobile %} slider slider--tablet grid--peek{% endif %} collection-list--{{ section.blocks.size }}-items"
         id="Slider-{{ section.id }}"
         role="list"
