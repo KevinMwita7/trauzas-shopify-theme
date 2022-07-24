@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', function() {
       
         // If we need pagination
         pagination: {
-          el: '.swiper-pagination',
+          el: '.collection-list-swiper-pagination',
           clickable: true,
         },
       
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.collection-list-swiper-button-next',
+          prevEl: '.collection-list-swiper-button-prev',
         }
     });
 
