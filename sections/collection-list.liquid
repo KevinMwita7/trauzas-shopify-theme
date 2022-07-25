@@ -13,6 +13,18 @@
   endif
 -%}
 
+<div class="collection-list-swiper">
+  <div class="swiper-wrapper">
+    <p class="swiper-slide">Slide 1</p>
+    <p class="swiper-slide">Slide 2</p>
+    <p class="swiper-slide">Slide 3</p>
+    <p class="swiper-slide">Slide 4</p>
+    <p class="swiper-slide">Slide 5</p>
+    <p class="swiper-slide">Slide 6</p>
+  </div>
+  <div class="collection-list-swiper-pagination"></div>
+</div>
+
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}">
     {%- unless section.settings.title == blank -%}
@@ -25,7 +37,7 @@
       </div>
     {%- endunless -%}
   
-    <div class="slider-mobile-gutter collection-list-swiper">
+    <div class="slider-mobile-gutter">
       <div class="swiper-wrapper">
         {%- liquid
           assign columns = section.blocks.size
@@ -35,13 +47,13 @@
         -%}
         {%- for block in section.blocks -%}
           <p class="swiper-slide">Slide {{ forloop.index0 }}</p>
-          {% comment %} <div class="swiper-slide {% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}" {{ block.shopify_attributes }}>
+          <div class="swiper-slide {% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}" {{ block.shopify_attributes }}>
             {% render 'card-collection', card_collection: block.settings.collection , media_aspect_ratio: section.settings.image_ratio, columns: columns %}
-          </div> {% endcomment %}
+          </div>
         {%- endfor -%}
       </div>
       
-      <div class="collection-list-swiper-pagination"></div>
+      {% comment %} <div class="collection-list-swiper-pagination"></div> {% endcomment %}
     </div>
   
     {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
