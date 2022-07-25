@@ -34,9 +34,10 @@
           endif
         -%}
         {%- for block in section.blocks -%}
-          <div class="swiper-slide {% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}" {{ block.shopify_attributes }}>
+          <p>Slide {{ forloop.index0 }}</p>
+          {% comment %} <div class="swiper-slide {% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}" {{ block.shopify_attributes }}>
             {% render 'card-collection', card_collection: block.settings.collection , media_aspect_ratio: section.settings.image_ratio, columns: columns %}
-          </div>
+          </div> {% endcomment %}
         {%- endfor -%}
       </div>
       
