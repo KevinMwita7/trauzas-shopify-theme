@@ -2,6 +2,12 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'swiper.min.css' | asset_url | stylesheet_tag }}
 
+{%- style -%}
+  .swiper-slide {
+    width: 366px !important;
+  }
+{%- endstyle -%}
+
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
