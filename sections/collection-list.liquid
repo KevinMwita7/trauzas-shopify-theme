@@ -34,7 +34,7 @@
           endif
         -%}
         {%- for block in section.blocks -%}
-          <p>Slide {{ forloop.index0 }}</p>
+          <p class="swiper-slide">Slide {{ forloop.index0 }}</p>
           {% comment %} <div class="swiper-slide {% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}" {{ block.shopify_attributes }}>
             {% render 'card-collection', card_collection: block.settings.collection , media_aspect_ratio: section.settings.image_ratio, columns: columns %}
           </div> {% endcomment %}
