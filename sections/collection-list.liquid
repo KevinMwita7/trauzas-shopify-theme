@@ -13,20 +13,8 @@
   endif
 -%}
 
-<div class="page-width collection-list-swiper swiper">
-    <div class="swiper-wrapper">
-      <p class="swiper-slide">Slide 1</p>
-      <p class="swiper-slide">Slide 2</p>
-      <p class="swiper-slide">Slide 3</p>
-      <p class="swiper-slide">Slide 4</p>
-      <p class="swiper-slide">Slide 5</p>
-      <p class="swiper-slide">Slide 6</p>
-    </div>
-    <div class="collection-list-swiper-pagination"></div>
-</div>
-
-{% comment %} <div class="color-{{ section.settings.color_scheme }} gradient">
-  <div style="padding: 0 5rem;"class="isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}">
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
         <h2 class="collection-list-title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
@@ -37,7 +25,7 @@
       </div>
     {%- endunless -%}
   
-    <div class="slider-mobile-gutter collection-list-swiper">
+    <div class="slider-mobile-gutter collection-list-swiper swiper">
       <div class="swiper-wrapper">
         {%- liquid
           assign columns = section.blocks.size
@@ -52,7 +40,7 @@
         {%- endfor -%}
       </div>
       
-      <div class="collection-list-swiper-pagination"></div>
+      <div class="collection-list-swiper-pagination swiper-pagination"></div>
     </div>
   
     {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
@@ -61,7 +49,7 @@
       </div>
     {%- endif -%}
   </div>
-</div> {% endcomment %}
+</div>
 
 <script src="{{ 'swiper.min.js' | asset_url }}" defer></script>
 <script src="{{ 'collection-slide.js' | asset_url }}" defer></script>
