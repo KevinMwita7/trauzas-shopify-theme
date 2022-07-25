@@ -13,7 +13,7 @@
   endif
 -%}
 
-<div class="collection-list-swiper" style="max-width: 990px; margin: 0 auto;">
+{% comment %} <div class="collection-list-swiper" style="max-width: 990px; margin: 0 auto;">
     <div class="swiper-wrapper">
       <p class="swiper-slide">Slide 1</p>
       <p class="swiper-slide">Slide 2</p>
@@ -23,9 +23,10 @@
       <p class="swiper-slide">Slide 6</p>
     </div>
     <div class="collection-list-swiper-pagination"></div>
-</div>
-{% comment %} <div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}">
+</div> {% endcomment %}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
         <h2 class="collection-list-title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
@@ -36,7 +37,7 @@
       </div>
     {%- endunless -%}
   
-    <div class="slider-mobile-gutter">
+    <div class="slider-mobile-gutter collection-list-swiper">
       <div class="swiper-wrapper">
         {%- liquid
           assign columns = section.blocks.size
@@ -61,7 +62,7 @@
       </div>
     {%- endif -%}
   </div>
-</div> {% endcomment %}
+</div>
 
 <script src="{{ 'swiper.min.js' | asset_url }}" defer></script>
 <script src="{{ 'collection-slide.js' | asset_url }}" defer></script>
