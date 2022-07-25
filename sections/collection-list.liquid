@@ -13,7 +13,7 @@
   endif
 -%}
 
-{% comment %} <div class="color-{{ section.settings.color_scheme }} gradient"> {% endcomment %}
+<div class="color-{{ section.settings.color_scheme }} gradient" style="max-width: 1320px;">
   <div class="page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
@@ -49,7 +49,7 @@
       </div>
     {%- endif -%}
   </div>
-{% comment %} </div> {% endcomment %}
+</div>
 
 <script src="{{ 'swiper.min.js' | asset_url }}" defer></script>
 <script src="{{ 'collection-slide.js' | asset_url }}" defer></script>
