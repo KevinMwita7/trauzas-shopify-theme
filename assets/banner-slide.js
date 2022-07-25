@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
       
         // If we need pagination
         pagination: {
-          el: '.swiper-pagination',
+          el: '.image-banner-swiper-pagination',
           clickable: true,
         },
       
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.image-banner-swiper-button-next',
+          prevEl: '.image-banner-swiper-button-prev',
         }
     });
 
