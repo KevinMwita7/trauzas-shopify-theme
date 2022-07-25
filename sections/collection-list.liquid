@@ -5,6 +5,12 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
+{%- style -%}
+  .pb-2 {
+    padding-bottom: 2rem
+  }
+{%- endstyle -%}
+
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
@@ -26,7 +32,7 @@
     {%- endunless -%}
   
     <div class="slider-mobile-gutter collection-list-swiper swiper">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper pb-2">
         {%- liquid
           assign columns = section.blocks.size
           if columns > 3
