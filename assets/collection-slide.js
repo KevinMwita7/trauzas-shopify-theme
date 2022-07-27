@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     grabCursor: true,
     navigation: {
-      nextEl: 'collection-list-swiper-button-next',
-      prevEl: 'collection-list-swiper-button-prev',
+      nextEl: '.collection-list-swiper-button-next',
+      prevEl: '.collection-list-swiper-button-prev',
     },
     breakpoints: {
       750: {
