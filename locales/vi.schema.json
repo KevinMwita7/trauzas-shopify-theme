@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "Số cột trên màn hình máy tính"
         },
+        "header_tablet": {
+          "content": "Bố cục máy tính bảng"
+        },
+        "columns_tablet": {
+          "label": "Số cột trên máy tính bảng"
+        },
         "header_mobile": {
           "content": "Bố cục trên thiết bị di động"
         },

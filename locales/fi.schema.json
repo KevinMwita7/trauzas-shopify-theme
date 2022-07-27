@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "Sarakkeiden määrä työpöydällä"
         },
+        "header_tablet": {
+          "content": "Tabletin asettelu"
+        },
+        "columns_tablet": {
+          "label": "Tablettien sarakkeiden määrä"
+        },
         "header_mobile": {
           "content": "Mobiilipohja"
         },

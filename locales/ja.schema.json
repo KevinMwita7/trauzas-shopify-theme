@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "デスクトップの列数"
         },
+        "header_tablet": {
+          "content": "タブレットレイアウト"
+        },
+        "columns_tablet": {
+          "label": "タブレットの列数"
+        },
         "header_mobile": {
           "content": "モバイルのレイアウト"
         },

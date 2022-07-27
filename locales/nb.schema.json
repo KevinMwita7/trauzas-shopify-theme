@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "Antall kolonner på datamaskin"
         },
+        "header_tablet": {
+          "content": "Oppsett for nettbrett"
+        },
+        "columns_tablet": {
+          "label": "Antall kolonner på nettbrett"
+        },
         "header_mobile": {
           "content": "Mobillayout"
         },

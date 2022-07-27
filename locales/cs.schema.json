@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "Počet sloupců na počítači"
         },
+        "header_tablet": {
+          "content": "Rozložení tabletu"
+        },
+        "columns_tablet": {
+          "label": "Počet sloupců na tabletech"
+        },
         "header_mobile": {
           "content": "Mobilní rozvržení"
         },

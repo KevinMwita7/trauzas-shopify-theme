@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "Nombre de colonnes sur ordinateur"
         },
+        "header_tablet": {
+          "content": "Disposition de la tablette"
+        },
+        "columns_tablet": {
+          "label": "Nombre de colonnes sur les tablettes"
+        },
         "header_mobile": {
           "content": "Mise en page sur mobile"
         },

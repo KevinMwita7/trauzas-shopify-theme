@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "Antalet kolumner på skrivbordet"
         },
+        "header_tablet": {
+          "content": "Layout för surfplatta"
+        },
+        "columns_tablet": {
+          "label": "Antal kolumner på surfplattor"
+        },
         "header_mobile": {
           "content": "Mobil layout"
         },

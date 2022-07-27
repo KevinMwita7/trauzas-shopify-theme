@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "Antallet af kolonner på computer"
         },
+        "header_tablet": {
+          "content": "Tablet Layout"
+        },
+        "columns_tablet": {
+          "label": "Antal kolonner på tabletter"
+        },
         "header_mobile": {
           "content": "Mobillayout"
         },

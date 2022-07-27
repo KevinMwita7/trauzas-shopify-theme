@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "桌面版的欄數"
         },
+        "header_tablet": {
+          "content": "平板電腦佈局"
+        },
+        "columns_tablet": {
+          "label": "平板電腦上的列數"
+        },
         "header_mobile": {
           "content": "行動版版面配置"
         },

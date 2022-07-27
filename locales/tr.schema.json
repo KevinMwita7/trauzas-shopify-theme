@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "Masaüstündeki sütun sayısı"
         },
+        "header_tablet": {
+          "content": "Tablet Düzeni"
+        },
+        "columns_tablet": {
+          "label": "Tabletlerdeki sütun sayısı"
+        },
         "header_mobile": {
           "content": "Mobil Düzen"
         },

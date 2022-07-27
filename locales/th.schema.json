@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "จำนวนของคอลัมน์บนเดสก์ท็อป"
         },
+        "header_tablet": {
+          "content": "เค้าโครงแท็บเล็ต"
+        },
+        "columns_tablet": {
+          "label": "จํานวนคอลัมน์บนแท็บเล็ต"
+        },
         "header_mobile": {
           "content": "เลย์เอาต์สำหรับมือถือ"
         },

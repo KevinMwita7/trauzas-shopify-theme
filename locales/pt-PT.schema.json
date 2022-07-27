@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "Número de colunas no ambiente de trabalho"
         },
+        "header_tablet": {
+          "content": "Tablet Layout"
+        },
+        "columns_tablet": {
+          "label": "Número de colunas em tablets"
+        },
         "header_mobile": {
           "content": "Esquema para dispositivo móvel"
         },

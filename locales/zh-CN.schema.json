@@ -504,6 +504,12 @@
         "columns_desktop": {
           "label": "桌面上的列数"
         },
+        "header_tablet": {
+          "content": "平板电脑布局"
+        },
+        "columns_tablet": {
+          "label": "平板电脑上的列数"
+        },
         "header_mobile": {
           "content": "移动设备布局"
         },
