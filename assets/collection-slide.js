@@ -19,10 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     breakpoints: {
       750: {
-        slidesPerView: +swiperHtmlEl.getAttribute("data-slides-per-view-desktop"),
+        slidesPerView: +swiperHtmlEl.getAttribute("data-slides-per-view-md"),
         allowSlideNext: true,
         allowSlidePrev: true,
-      }
+      },
+      990: {
+        slidesPerView: +swiperHtmlEl.getAttribute("data-slides-per-view-lg"),
+        allowSlideNext: true,
+        allowSlidePrev: true,
+      },
     }
   });
 
