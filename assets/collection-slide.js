@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let swiperHtmlEl = document.getElementById("collection-list-swiper");
 
   let swiper = new Swiper('.collection-list-swiper', {
-    slidesPerView: +swiperHtmlEl.getAttribute("data-slides-per-view"),
+    // slidesPerView: +swiperHtmlEl.getAttribute("data-slides-per-view"),
     spaceBetween: 30,
     // If we need pagination
     pagination: {
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     breakpoints: {
       750: {
-        slidesPerView: +swiperHtmlEl.getAttribute("data-slides-per-view-desktop"),
+        // slidesPerView: +swiperHtmlEl.getAttribute("data-slides-per-view-desktop"),
       }
     }
   });
