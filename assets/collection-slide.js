@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   let swiperHtmlEl = document.getElementById("collection-list-swiper");
   let enableSwipeOnMobile = swiperHtmlEl.getAttribute("data-swipe-on-mobile");
-  console.log(enableSwipeOnMobile);
+
   let swiper = new Swiper('.collection-list-swiper', {
     allowSlideNext: enableSwipeOnMobile === "false" ? false : true,
     allowSlidePrev: enableSwipeOnMobile === "false" ? false : true,

@@ -512,6 +512,12 @@
         "show_view_all": {
           "label": "Enable \"View all\" button if list includes more collections than shown"
         },
+        "header_tablet": {
+          "content": "Tablet Layout"
+        },
+        "columns_tablet": {
+          "label": "Number of columns on tablets"
+        },
         "header_mobile": {
           "content": "Mobile Layout"
         },
