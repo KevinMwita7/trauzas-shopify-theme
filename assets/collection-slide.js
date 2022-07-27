@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   let swiperHtmlEl = document.getElementById("collection-list-swiper");
-
+  console.log(swiperHtmlEl);
   let swiper = new Swiper('.collection-list-swiper', {
     slidesPerView: +swiperHtmlEl.getAttribute("data-slides-per-view"),
     spaceBetween: 30,
