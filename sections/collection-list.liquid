@@ -57,10 +57,14 @@
         {%- endfor -%}
       </div>
       
-      <div class="collection-list-swiper-pagination swiper-pagination"></div>
+      {%- if section.settings.swiper_navigation_bullets -%}
+        <div class="collection-list-swiper-pagination swiper-pagination"></div>
+      {%- endif -%}
 
-      <div class="swiper-button-prev collection-list-swiper-button-prev"></div>
-      <div class="swiper-button-next collection-list-swiper-button-next"></div>
+      {%- if section.settings.swiper_navigation_arrows -%}
+        <div class="swiper-button-prev collection-list-swiper-button-prev"></div>
+        <div class="swiper-button-next collection-list-swiper-button-next"></div>
+      {%- endif -%}
     </div>
   
     {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
@@ -210,6 +214,22 @@
       "step": 1,
       "default": 2,
       "label": "t:sections.collection-list.settings.columns_tablet.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.collection-list.settings.swiper_navigation.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "swiper_navigation_arrows",
+      "default": true,
+      "label": "t:sections.collection-list.settings.swiper_navigation.swiper__arrows.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "swiper_navigation_bullets",
+      "default": true,
+      "label": "t:sections.collection-list.settings.swiper_navigation.swiper__bullets.label"
     },
     {
       "type": "header",

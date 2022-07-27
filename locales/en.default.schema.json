@@ -532,6 +532,15 @@
         },
         "swipe_on_mobile": {
           "label": "Enable swipe on mobile"
+        },
+        "swiper_navigation": {
+          "label": "Swiper navigation",
+          "swiper__arrows": {
+            "label": "Show navigation arrows"
+          },
+          "swiper__bullets": {
+            "label": "Show navigation bullets"
+          }
         }
       },
       "blocks": {
