@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       750: {
         slidesPerView: +swiperHtmlEl.getAttribute("data-slides-per-view-desktop"),
+        allowSlideNext: true,
+        allowSlidePrev: true,
       }
     }
   });
