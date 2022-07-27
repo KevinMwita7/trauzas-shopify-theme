@@ -31,7 +31,7 @@
       </div>
     {%- endunless -%}
   
-    <div class="slider-mobile-gutter collection-list-swiper swiper" data-slides-per-view="{{ section.settings.columns_desktop }}">
+    <div id="collection-list-swiper" class="slider-mobile-gutter collection-list-swiper swiper" data-slides-per-view="{{ section.settings.columns_mobile }}" data-slides-per-view-desktop="{{ section.settings.columns_desktop }}">
       <div class="swiper-wrapper pb-2">
         {%- liquid
           assign columns = section.blocks.size
