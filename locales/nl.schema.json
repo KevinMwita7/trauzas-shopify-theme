@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Swipen op mobiel inschakelen"
         },
+        "swiper_navigation": {
+          "label": "Swiper navigatie",
+          "swiper__arrows": {
+            "label": "Navigatiepijlen weergeven"
+          },
+          "swiper__bullets": {
+            "label": "Navigatie opsommingstekens weergeven"
+          }
+        },
         "show_view_all": {
           "label": "Schakel de knop 'Alles weergeven' in als de lijst meer collecties bevat dan wordt getoond"
         },

@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Aktiver sveip på mobil"
         },
+        "swiper_navigation": {
+          "label": "Swiper-navigasjon",
+          "swiper__arrows": {
+            "label": "Vis navigasjonspiler"
+          },
+          "swiper__bullets": {
+            "label": "Vis navigasjonspunkt"
+          }
+        },
         "show_view_all": {
           "label": "Aktiver «Vis alle»-knapp hvis listen inneholder flere samlinger enn de som vises"
         },

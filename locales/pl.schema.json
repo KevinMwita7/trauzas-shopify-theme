@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Włącz przeciąganie na urządzeniu mobilnym"
         },
+        "swiper_navigation": {
+          "label": "Nawigacja Swiper",
+          "swiper__arrows": {
+            "label": "Pokazywanie strzałek nawigacyjnych"
+          },
+          "swiper__bullets": {
+            "label": "Pokazywanie punktorów nawigacyjnych"
+          }
+        },
         "show_view_all": {
           "label": "Włącz przycisk „Wyświetl wszystko”, jeśli lista zawiera więcej kolekcji niż pokazano"
         },

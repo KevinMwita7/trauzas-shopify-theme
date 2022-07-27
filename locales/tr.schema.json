@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Mobil cihazda kaydırmayı etkinleştir"
         },
+        "swiper_navigation": {
+          "label": "Kaydırma navigasyonu",
+          "swiper__arrows": {
+            "label": "Gezinme oklarını göster"
+          },
+          "swiper__bullets": {
+            "label": "Gezinme madde işaretlerini göster"
+          }
+        },
         "show_view_all": {
           "label": "Liste gösterilenden daha fazla koleksiyon içeriyorsa \"Tümünü görüntüle\" düğmesini etkinleştir"
         },

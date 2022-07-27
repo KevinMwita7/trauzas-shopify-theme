@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Wischen auf Mobilgeräten aktivieren"
         },
+        "swiper_navigation": {
+          "label": "Wischnavigation",
+          "swiper__arrows": {
+            "label": "Navigationspfeile anzeigen"
+          },
+          "swiper__bullets": {
+            "label": "Navigationsaufzählungszeichen anzeigen"
+          }
+        },
         "show_view_all": {
           "label": "Aktiviere die Schaltfläche \"Alle anzeigen\", wenn die Liste mehr Kategorien enthält, als angezeigt werden"
         },

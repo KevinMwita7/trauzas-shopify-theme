@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Activer le balayage sur mobile"
         },
+        "swiper_navigation": {
+          "label": "Navigation par balayage",
+          "swiper__arrows": {
+            "label": "Afficher les flèches de navigation"
+          },
+          "swiper__bullets": {
+            "label": "Afficher les puces de navigation"
+          }
+        },
         "show_view_all": {
           "label": "Activer le bouton « Tout afficher » si la liste comprend plus de collections que celles affichées"
         },

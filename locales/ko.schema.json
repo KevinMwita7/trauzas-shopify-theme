@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "모바일에서 긁기 활성화"
         },
+        "swiper_navigation": {
+          "label": "스와이퍼 탐색",
+          "swiper__arrows": {
+            "label": "탐색 화살표 표시"
+          },
+          "swiper__bullets": {
+            "label": "탐색 글머리 기호 표시"
+          }
+        },
         "show_view_all": {
           "label": "목록에 표시된 것보다 많은 컬렉션이 있는 경우 \"모두 보기\" 버튼을 활성화하십시오."
         },

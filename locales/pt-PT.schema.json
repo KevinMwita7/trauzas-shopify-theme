@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Ativar leitura magnética no dispositivo móvel"
         },
+        "swiper_navigation": {
+          "label": "Navegação swiper",
+          "swiper__arrows": {
+            "label": "Mostrar setas de navegação"
+          },
+          "swiper__bullets": {
+            "label": "Mostrar balas de navegação"
+          }
+        },
         "show_view_all": {
           "label": "Ative o botão \"Ver tudo\" caso a lista possua mais coleções do que as apresentadas"
         },

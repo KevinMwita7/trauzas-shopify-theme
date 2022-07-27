@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Abilita scorrimento su dispositivo mobile"
         },
+        "swiper_navigation": {
+          "label": "Navigazione swiper",
+          "swiper__arrows": {
+            "label": "Mostra frecce di navigazione"
+          },
+          "swiper__bullets": {
+            "label": "Mostra punti elenco di navigazione"
+          }
+        },
         "show_view_all": {
           "label": "Abilita il pulsante \"Visualizza tutto\" se l'elenco include più collezioni di quelle mostrate"
         },

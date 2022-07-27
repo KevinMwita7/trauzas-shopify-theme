@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Bật tính năng quẹt trên di động"
         },
+        "swiper_navigation": {
+          "label": "Điều hướng bằng thẻ sọc từ",
+          "swiper__arrows": {
+            "label": "Hiện mũi tên điều hướng"
+          },
+          "swiper__bullets": {
+            "label": "Hiển thị dấu đầu dòng điều hướng"
+          }
+        },
         "show_view_all": {
           "label": "Bật nút \"View all\" (Xem tất cả) nếu danh sách chứa nhiều bộ sưu tập hơn số lượng hiển thị"
         },

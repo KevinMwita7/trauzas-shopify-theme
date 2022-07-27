@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Ota pyyhkäisy käyttöön mobiililaitteessa"
         },
+        "swiper_navigation": {
+          "label": "Swiper-navigointi",
+          "swiper__arrows": {
+            "label": "Näytä siirtymisnuolet"
+          },
+          "swiper__bullets": {
+            "label": "Näytä navigoinnin luettelomerkit"
+          }
+        },
         "show_view_all": {
           "label": "Ota Näytä kaikki ‑painike käyttöön, jos luettelo sisältää useampia kokoelmia kuin mitä on näkyvissä"
         },

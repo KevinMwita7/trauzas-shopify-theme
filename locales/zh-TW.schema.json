@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "啟用行動裝置的滑動功能"
         },
+        "swiper_navigation": {
+          "label": "刷卡器導航",
+          "swiper__arrows": {
+            "label": "顯示導航箭號"
+          },
+          "swiper__bullets": {
+            "label": "顯示導航項目符號"
+          }
+        },
         "show_view_all": {
           "label": "若清單中包含的商品系列比顯示出的更多，請啟用「檢視全部」按鈕"
         },

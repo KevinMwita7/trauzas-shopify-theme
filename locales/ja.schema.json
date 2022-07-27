@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "モバイルでスワイプを有効にする"
         },
+        "swiper_navigation": {
+          "label": "スワイパーナビゲーション",
+          "swiper__arrows": {
+            "label": "ナビゲーション矢印の表示"
+          },
+          "swiper__bullets": {
+            "label": "ナビゲーションの行頭文字を表示する"
+          }
+        },
         "show_view_all": {
           "label": "リストに表示されているよりも多くのコレクションが含まれている場合、「すべてを表示」ボタンを有効にします"
         },

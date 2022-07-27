@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Povolit potažení prstem na mobilním zařízení"
         },
+        "swiper_navigation": {
+          "label": "Navigace swiperem",
+          "swiper__arrows": {
+            "label": "Zobrazit navigační šipky"
+          },
+          "swiper__bullets": {
+            "label": "Zobrazit navigační odrážky"
+          }
+        },
         "show_view_all": {
           "label": "Povolit tlačítko Zobrazit vše v případě, že seznam obsahuje více kolekcí, než kolik se zobrazuje"
         },

@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "在移动设备上启用刷卡功能"
         },
+        "swiper_navigation": {
+          "label": "刷卡器导航",
+          "swiper__arrows": {
+            "label": "显示导航箭头"
+          },
+          "swiper__bullets": {
+            "label": "显示导航项目符号"
+          }
+        },
         "show_view_all": {
           "label": "如果列表中的产品系列未全部显示，请启用“查看全部”按钮"
         },

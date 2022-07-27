@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Aktivera swipe på mobilen"
         },
+        "swiper_navigation": {
+          "label": "Swiper-navigering",
+          "swiper__arrows": {
+            "label": "Visa navigeringspilar"
+          },
+          "swiper__bullets": {
+            "label": "Visa navigeringspunkter"
+          }
+        },
         "show_view_all": {
           "label": "Aktivera \"Visa alla\"-knappen om listan innehåller fler produktserier än vad som visas"
         },

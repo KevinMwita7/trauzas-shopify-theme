@@ -498,6 +498,15 @@
         "swipe_on_mobile": {
           "label": "Activar uso de banda magnética en el móvil"
         },
+        "swiper_navigation": {
+          "label": "Navegación deslizante",
+          "swiper__arrows": {
+            "label": "Mostrar flechas de navegación"
+          },
+          "swiper__bullets": {
+            "label": "Mostrar viñetas de navegación"
+          }
+        },
         "show_view_all": {
           "label": "Habilitar el botón \"Ver todos\" si la lista incluye más colecciones de las que se muestran"
         },
