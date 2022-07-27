@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
       el: '.collection-list-swiper-pagination',
       clickable: true,
     },
+
+    navigation: {
+      nextEl: 'collection-list-swiper-button-next',
+      prevEl: 'collection-list-swiper-button-prev',
+    }
   });
 
   if (Shopify.designMode) {
