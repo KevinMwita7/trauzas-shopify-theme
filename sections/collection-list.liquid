@@ -42,7 +42,8 @@
       </div>
     {%- endunless -%}
   
-    <div id="collection-list-swiper" class="slider-mobile-gutter collection-list-swiper swiper" data-slides-per-view="{{ section.settings.columns_mobile }}" data-slides-per-view-md="{{ section.settings.columns_tablet }}" data-slides-per-view-lg="{{ section.settings.columns_desktop }}" data-swipe-on-mobile="{{ section.settings.swipe_on_mobile }}">
+    <div id="collection-list-swiper" class="slider-mobile-gutter collection-list-swiper swiper" data-slides-per-view="{{ section.settings.columns_mobile }}" data-slides-per-view-md="{{ section.settings.columns_tablet }}" data-slides-per-view-lg="{{ section.settings.columns_desktop }}" data-swipe-on-mobile="{{ section.settings.swipe_on_mobile }}" 
+      style="--swiper-navigation-color: {{ section.settings.color_scheme }}; --swiper-pagination-color: {{ section.settings.color_scheme }};">
       <div class="swiper-wrapper pb-2">
         {%- liquid
           assign columns = section.blocks.size
