@@ -198,7 +198,7 @@
         "heading_size": "h1",
         "image_ratio": "portrait",
         "columns_desktop": 3,
-        "color_scheme": "inverse",
+        "color_scheme": "background-1",
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
